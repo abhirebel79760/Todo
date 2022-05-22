@@ -1,0 +1,14 @@
+<h1> hello baby came to home page</h1>
+<p>her is new todo </p>
+<%for (let c of comment){%>
+    <a href="/detail/<%=c.id%>">
+    <ul> her is you data <%= c.user%> <%= c.todo %></ul>
+    </a>
+    <% } %>
+
+
+<form method="post" action="/">
+    <input type="text" name="user">
+    <input type="text" name="todo" >
+    <button type="submit">submit</button>
+</form>
